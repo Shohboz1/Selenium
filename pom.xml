@@ -30,6 +30,18 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/core -->
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.6.1</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
 
     </dependencies>
 
