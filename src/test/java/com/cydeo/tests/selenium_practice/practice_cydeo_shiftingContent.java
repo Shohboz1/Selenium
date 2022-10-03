@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class Exs_6 {
+public class practice_cydeo_shiftingContent {
 
     WebDriver driver;
 

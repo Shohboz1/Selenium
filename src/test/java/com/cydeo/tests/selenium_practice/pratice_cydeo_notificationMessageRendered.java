@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class Exs_5 {
+public class pratice_cydeo_notificationMessageRendered {
 
     WebDriver driver;
 

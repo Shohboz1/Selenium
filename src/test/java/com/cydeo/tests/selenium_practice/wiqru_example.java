@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class Exs_4 {
+public class wiqru_example {
 
     WebDriver driver;
 
