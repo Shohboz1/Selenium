@@ -24,11 +24,13 @@ public class practice_cydeo_statusCodes {
     }
 
     @Test
-    public void code() {
+    public void code() throws InterruptedException {
 
+        Thread.sleep(3000);
         WebElement search200Btn = driver.findElement(By.xpath("//a[@href='status_codes/200']"));
         search200Btn.click();
 
+        Thread.sleep(3000);
         WebElement searchHereBtn = driver.findElement(By.xpath("//a[@href='/status_codes']"));
         searchHereBtn.click();
 
@@ -37,6 +39,7 @@ public class practice_cydeo_statusCodes {
 
         System.out.println(actualText.equals(expectedText) ? "Text verification is PASSED" : "Text verification is FAILED");
 
+        Thread.sleep(3000);
         WebElement searchCydeoBtn = driver.findElement(By.xpath("//a[@target='_blank']"));
         searchCydeoBtn.click();
     }
