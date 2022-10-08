@@ -17,11 +17,12 @@ public class youTube_example {
         driver.get("https://www.youtube.com");
 
         WebElement searchBox = driver.findElement(By.cssSelector("input[id='search']"));
-        searchBox.sendKeys("indila");
+        searchBox.sendKeys("اجمل اغنية تركية ( لا لا لاااا لا لا ) كاملة مترجمه عربي");
         searchBox.sendKeys(Keys.ENTER);
 
-       WebElement enterMusic = driver.findElement(By.className("Indila - Dernière Danse (Clip Officiel)"));
-       enterMusic.click();
+
+
+
 
 
 
