@@ -1,4 +1,4 @@
-package com.cydeo.tests.dy6_Window_webtables;
+package com.cydeo.tests.day6_Window_webtables;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;

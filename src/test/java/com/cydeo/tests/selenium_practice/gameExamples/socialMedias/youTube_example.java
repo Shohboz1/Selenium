@@ -1,4 +1,4 @@
-package com.cydeo.tests.selenium_practice.socialMedias;
+package com.cydeo.tests.selenium_practice.gameExamples.socialMedias;
 
 import com.cydeo.utilities.WebDriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
