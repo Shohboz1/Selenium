@@ -1,5 +1,8 @@
 package com.cydeo.utilities;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
 public class BrowserUtilities {
     // Methods are static. Because we do not want to create an object to call those methods
     // We just want to call those methods with class name. That is why they are static type
@@ -16,6 +19,11 @@ public class BrowserUtilities {
             e.printStackTrace();
             System.out.println("Exception happened in sleep method");
         }
+    }
+
+    public static void verifyTitle(WebDriver driver, String expectedTitle){
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle, expectedTitle);
     }
 
 }
