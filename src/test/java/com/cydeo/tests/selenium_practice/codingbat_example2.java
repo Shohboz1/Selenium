@@ -39,7 +39,7 @@ public class codingbat_example2 {
 
         Thread.sleep(2000);
         WebElement enterEmail = driver.findElement(By.xpath("//input[@type='text']"));
-        enterEmail.sendKeys("dostiyevoshna@gmail.com");
+        enterEmail.sendKeys("dengiyevmoney@gmail.com");
 
         Thread.sleep(2000);
         WebElement enterPassword = driver.findElement(By.xpath("//input[@type='password']"));

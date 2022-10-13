@@ -1,4 +1,4 @@
-package com.cydeo.tests.selenium_practice.gameExamples.socialMedias;
+package com.cydeo.tests.selenium_practice.socialMedias;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
