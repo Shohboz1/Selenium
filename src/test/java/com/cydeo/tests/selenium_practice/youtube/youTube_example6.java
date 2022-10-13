@@ -1,4 +1,4 @@
-package com.cydeo.tests.selenium_practice.socialMedias;
+package com.cydeo.tests.selenium_practice.youtube;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -8,21 +8,23 @@ import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
-public class youTube_example3 {
+public class youTube_example6 {
     public static void main(String[] args) {
 
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        driver.get("https://youtube.com");
+        driver.get("https://www.youtube.com");
 
-        WebElement enterSomething  = driver.findElement(By.xpath("//input[@id='search']"));
-        enterSomething.sendKeys("Aslamboi");
-        enterSomething.sendKeys(Keys.ENTER);
+        WebElement enterVideoName = driver.findElement(By.xpath("//input[@id='search']"));
+        enterVideoName.sendKeys("KO'RGAN SARI KO'RGING KELAR // SENATOR INSTAGRAM REAKSIYA");
+        enterVideoName.sendKeys(Keys.ENTER);
 
-        WebElement enterVideo = driver.findElement(By.xpath("(//yt-formatted-string[@class='style-scope ytd-video-renderer'])[1]"));
+        WebElement enterVideo = driver.findElement(By.xpath("(//a[@id='video-title'])[1]"));
         enterVideo.click();
+
+
 
     }
 }

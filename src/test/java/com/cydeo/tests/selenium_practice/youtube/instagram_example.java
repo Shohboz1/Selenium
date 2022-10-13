@@ -1,4 +1,4 @@
-package com.cydeo.tests.selenium_practice.socialMedias;
+package com.cydeo.tests.selenium_practice.youtube;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
