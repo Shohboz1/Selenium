@@ -1,7 +1,7 @@
 package com.cydeo.tests.day9_properties_configuration;
 
 import com.cydeo.tests.test.TestBase;
-import com.cydeo.utilities.ConfigurationReader;
+//import com.cydeo.utilities.ConfigurationReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -15,7 +15,7 @@ public class T3_Config_Practice extends TestBase {
 
         //2. Go to https://google.com
      //   driver.get("https://www.google.com");
-        driver.get((ConfigurationReader.getProperty("google.url")));
+  //      driver.get((ConfigurationReader.getProperty("google.url")));
 
         //3. Write "apple" in search box
         WebElement searchBox = driver.findElement(By.xpath("//input[@name='q']"));

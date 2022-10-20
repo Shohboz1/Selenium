@@ -47,7 +47,7 @@ public class T1_webtable_practice {
 
     @Test
     public void codePart2(){
-        String customerOrderData1 = WebTableUtils.returnOrderData(driver, "Alexandra Gray");
+        String customerOrderData1 = WebTableUtils.returnOrderDay(driver, "Alexandra Gray");
         System.out.println("customerOrderData1 = " + customerOrderData1);
     }
 
