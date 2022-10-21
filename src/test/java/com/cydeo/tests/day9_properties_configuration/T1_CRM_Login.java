@@ -1,8 +1,7 @@
 package com.cydeo.tests.day9_properties_configuration;
 
-import com.cydeo.tests.test.TestBase;
+import com.cydeo.tests.base.TestBase;
 //import com.cydeo.utilities.BrowserUtilities;
-import com.cydeo.utilities.BrowserUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;

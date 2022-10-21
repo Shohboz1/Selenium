@@ -1,4 +1,4 @@
-package com.cydeo.tests.day11_upload_actions;
+package com.cydeo.tests.day10_javafaker_driver_util;
 
 import com.cydeo.utilities.BrowserUtil;
 import com.cydeo.utilities.Driver;

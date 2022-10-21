@@ -10,12 +10,12 @@ import org.testng.annotations.Test;
 
 public class LibraryLoginTest {
 
-    LibraryLoginPage libraryLoginPage;
+    LibraryLoginPage obj;
 
     @BeforeMethod
     public void setUp(){
         Driver.getDriver().get("https://library1.cydeo.com");
-        LibraryLoginPage libraryLoginPage = new LibraryLoginPage();
+        obj = new LibraryLoginPage();
     }
     @Test
     public void required_field_error_message_test(){
@@ -27,11 +27,11 @@ public class LibraryLoginTest {
         //4. Click to "Sign in" button
         //LibraryLoginPage libraryLoginPage = new LibraryLoginPage();
 
-        libraryLoginPage.signInButton.click();
+        obj.signInButton.click();
 
         //5. Verify expected error is displayed
         //Expected: The field is required.
-        Assert.assertTrue(libraryLoginPage.fieldRequiredErrorMsg.isDisplayed());
+        Assert.assertTrue(obj.fieldRequiredErrorMsg.isDisplayed());
     }
 
     @Test
@@ -43,11 +43,13 @@ public class LibraryLoginTest {
         //3. Enter invalid email format
         //LibraryLoginPage libraryLoginPage = new LibraryLoginPage();
 
-        libraryLoginPage.signInButton.click();
+        obj.inputUsername.sendKeys("aslamyobr@gamil.com");
+        obj.inputPassword.sendKeys("aslamyobr");
+        obj.signInButton.click();
 
         //4. Verify expected error is displayed:
         //Expected: Please enter a valid
-        Assert.assertTrue(libraryLoginPage.fieldRequiredErrorMsg.isDisplayed());
+        Assert.assertTrue(obj.wrongEmailOrPasswordMsg.isDisplayed());
     }
 
     @Test
@@ -58,13 +60,13 @@ public class LibraryLoginTest {
 
         //3. Enter invalid email format
         // LibraryLoginPage libraryLoginPage = new LibraryLoginPage();
-        libraryLoginPage.inputUsername.sendKeys("wrong@gmail.com");
-        libraryLoginPage.inputPassword.sendKeys("wrongpassword");
-        libraryLoginPage.signInButton.click();
+        obj.inputUsername.sendKeys("wrong@gmail.com");
+        obj.inputPassword.sendKeys("wrongpassword");
+        obj.signInButton.click();
 
         //4. Verify expected error is displayed:
         //Expected: Sorry, Wrong Email or Password
-        Assert.assertTrue(libraryLoginPage.wrongEmailOrPasswordMsg.isDisplayed());
+        Assert.assertTrue(obj.wrongEmailOrPasswordMsg.isDisplayed());
 
     }
     @Test
@@ -75,9 +77,9 @@ public class LibraryLoginTest {
 
         //3. Enter invalid email format
         // LibraryLoginPage libraryLoginPage = new LibraryLoginPage();
-        libraryLoginPage.inputUsername.sendKeys(ConfigretionReader.getProperty("library.app.username"));
-        libraryLoginPage.inputPassword.sendKeys(ConfigretionReader.getProperty("library.app.password"));
-        libraryLoginPage.signInButton.click();
+        obj.inputUsername.sendKeys(ConfigretionReader.getProperty("library.app.username"));
+        obj.inputPassword.sendKeys(ConfigretionReader.getProperty("library.app.password"));
+        obj.signInButton.click();
 
     }
 

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class ExplicitWaitPractices {
 
     @Test
-    public void dynamically_loaded_page_elements_7_test(){
+    public void dynamically_loaded_page_elements_7_test() throws InterruptedException {
         //1. Go to https://practice.cydeo.com/dynamic_loading/7
         Driver.getDriver().get("https://practice.cydeo.com/dynamic_loading/7");
 
@@ -21,12 +21,13 @@ public class ExplicitWaitPractices {
         wait.until(ExpectedConditions.titleIs("Dynamic title"));
 
         //3. Assert: Message "Done" is Displayed
-        DynamicallyLoadedPage_7 dynamicLoadedPage_7 = new DynamicallyLoadedPage_7();
+        DynamicallyLoadedPage_7 obj = new DynamicallyLoadedPage_7();
 
-        Assert.assertTrue(dynamicLoadedPage_7.doneMessage.isDisplayed());
+        Assert.assertTrue(obj.doneMessage.isDisplayed());
 
         //4. Assert: Image is Displayed
-        Assert.assertTrue(dynamicLoadedPage_7.spongeBobImage.isDisplayed());
+        Thread.sleep(5000);
+        Assert.assertTrue(obj.spongeBobImage.isDisplayed());
 
     }
 

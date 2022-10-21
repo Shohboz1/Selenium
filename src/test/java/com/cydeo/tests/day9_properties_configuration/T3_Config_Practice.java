@@ -1,6 +1,6 @@
 package com.cydeo.tests.day9_properties_configuration;
 
-import com.cydeo.tests.test.TestBase;
+import com.cydeo.tests.base.TestBase;
 //import com.cydeo.utilities.ConfigurationReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
